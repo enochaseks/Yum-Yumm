@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Checkout</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+  <div class="menu_bar">
+    <h1 class="logo">Yumm<span> Yumm</span></h1>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Socials</a></li>
+    </ul>
+  </div>
+  <div class="container">
+          <h1>Checkout</h1>
+          <div class="cart">
+              <h2>Your Cart</h2>
+              <ul id="cart-items">
+                <li><a href="image1.jpg">Plantain Chicken Burger Meal</a></li>
+                <li><a href="image2.jpg">Fufu with Chicken stew meal</a></li>
+                <li><a href="image3.jpg">King Prawn and Chips meal</a></li>
+                <li><a href="image4.jpg">Vegan shrimp burger meal</a></li>
+              </ul>
+          </div>
+          <div class="billing">
+              <h2>Billing Information</h2>
+              <form id="billing-form">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" required>
+                  <br>
+                  <br>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required>
+                  <br>
+                  <br>
+                  <label for="address">Address:</label>
+                  <textarea id="address" required></textarea>
+                  <br>
+                  <br>
+                  <label for="Card Number">Card Number:</label>
+                  <textarea id="Card Number" required></textarea>
+                  <br><br>
+                  <label for="Expiry Date">Expiry Date:</label>
+                  <textarea id="Expiry Date" required></textarea>
+                  <br><br>
+                  <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+
+                  <br><br>
+                  <label for="country">Country</label>
+           <select id="country" name="country" required>
+               <option value="">Select a country</option>
+               <option value="us">United States</option>
+               <option value="ca">Canada</option>
+               <option value="uk">United Kingdom</option>
+             </select>
+             <br><br>
+             <label for="zip">ZIP Code</label>
+            <input type="text" id="zip" name="zip" required>
+            <br><br>
+             <button type="submit">Place Order</button>
+              </form>
+          </div>
+      </div>
+      <script src="script.js"></script>
+
+      <br> <br> <br> <br><br><br><br><br>
+      <footer>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <p class= "Copyright">Copyright &copy; 2023 Yumm Yumm</p>
+      </footer>
+
+</body>
+</html>
+<head>
+<style>
+
+
+    *{
+      margin:: 0;
+      padding: 0;
+      box-sizing: border-box;
+     }
+
+      body {
+        background-color: yellow;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu_bar {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5%;
+      }
+
+      .logo {
+        color: yellow;
+        font-size: 50px;
+        font-family: Impact, Arial, sans-serif;
+        margin: 0;
+      }
+
+      .logo span {
+        color: yellow;
+      }
+
+      .menu_bar ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .menu_bar ul li {
+        padding: 10px 15px;
+        position: relative;
+      }
+
+      .menu_bar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        -webkit-text-stroke: 1px black;
+        transition: all 0.3s;
+      }
+
+      .menu_bar ul li a:hover {
+        color: var(--color-primary);
+      }
+
+      /* ... (your existing styles) ... */
+
+    /* Add media queries for tablet and mobile */
+    @media (max-width: 768px) {
+      /* Adjust menu styles for smaller screens */
+      .menu_bar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu_bar ul li {
+        padding: 5px 0;
+      }
+      .menu_bar ul li a {
+        font-size: 16px;
+      }
+
+      /* Adjust slider size for smaller screens */
+      .slider {
+        border-radius: 0;
+        width: 100%;
+        max-width: none;
+      }
+
+      /* Adjust image size for smaller screens */
+      .image5 {
+        width: 100%;
+        padding: 30px;
+      }
+
+      /* Adjust footer size for smaller screens */
+      footer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+      }
+
+      /* Adjust social media icons position for smaller screens */
+      .fa-instagram,
+      .fa-x-twitter {
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+
+      h2 {
+      font-family: inherit, sans-serif, Arial;
+      color: 10px black;
+      -webkit-text-stroke: 0.5px white;
+      font-size: 65px;
+      font-style: oblique;
+    }
+
+
+    footer {
+      text-align: center;
+      background-color: black;
+      width: 150%;
+      height: 220px;
+      color: white;
+      padding: 58px;
+      padding
+    }
+
+    .Copyright {
+      text-align: center;
+      font-size: 20px;
+      padding: 100px;
+      margin-bottom: 100px;
+      margin-top: -80px;
+      padding-bottom: -100px;
+      padding-top: -990px;
+      margin-left: -999px;
+    }
+
+    .fa-instagram {
+      font-size: 30px;
+      text-align: center;
+      margin-left: -1130px;
+      padding-left: 100px;
+      margin-top: -1500px;
+    }
+
+    .fa-x-twitter {
+      font-size: 30px;
+      text-align: center;
+      margin-left: -95px;
+      padding-left: 100px;
+      margin-top: -1500px;
+    }
+
+    .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart, .billing {
+    border: 4px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+    </style>
+    </head>
